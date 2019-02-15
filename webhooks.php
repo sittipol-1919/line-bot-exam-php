@@ -6,7 +6,6 @@ require_once('vendor/linecorp/line-bot-sdk/line-bot-sdk-tiny/LINEBotTiny.php');
 $access_token = 'AR/mEPCWEHjTgehJg+nVhqHH1tJYFqJsALpuKDorswwCIq4LtAek9ym9QSwXJoMO1IuhZlHnnxBSO7iMI+BhN9wpLJxk6/NP7YhQPqkqerIoG+J+6mmDXMifGC512Yxw7V5ADVASfsW4aTU6qUOg4wdB04t89/1O/w1cDnyilFU=';
 
 // Get POST body content
-$content = "สวัสดี";
 $content = file_get_contents('php://input');
 // Parse JSON
 $events = json_decode($content, true);
